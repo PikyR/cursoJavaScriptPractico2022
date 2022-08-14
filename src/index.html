@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manipulación de DOM básica - Curso práctico de JS</title>
-</head>
-<body>
-  <section >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulación de DOM básica - Curso práctico de JS</title>
+  </head>
+  <body>
     <h1 class="main-title">Manipulación de DOM básica</h1>
+    <section id="suma">
+      <h2>Suma</h2>
+      <input id="input-1" type="number" placeholder="Primer número" />
+      <input id="input-2" type="number" placeholder="Segundo número" />
+      <button id="btn-sumar">Sumar</button>
 
-     <input id="input-1" type="number" placeholder="Primer número">
-     <input id="input-2" type="number" placeholder="Segundo número">
-     <button id="btn-sumar" onclick="sumar()">Sumar</button>
+      <p id="resultContainer"></p>
+    </section>
 
-     <p id="resultContainer"></p>
-  </section>
+    <section id="resta">
+      <h2>Resta</h2>
+      <form>
+        <input id="resta__input-1" type="number" placeholder="Primer número" />
+        <input id="resta__input-2" type="number" placeholder="Segundo número" />
+        <button id="btn-restar">Restar</button>
+      </form>
 
-  <script src="assets/index.js"></script>
-</body>
+      <p id="resultContainerResta"></p>
+    </section>
+
+    <script src="assets/index.js"></script>
+  </body>
 </html>
